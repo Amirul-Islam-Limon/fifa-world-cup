@@ -6,6 +6,8 @@
     font-family: 'Poppins', sans-serif;
     
 }
+
+/*==================== header menu =========================  */
 .container{
     margin: 0 100px;
 }
@@ -44,11 +46,11 @@
     border-radius: 5px;
 }
 
-.test1{
+/* .test1{
     display: inline;
-}
+} */
 
-/* blog container  */
+/* ========================blog container ============= */
 
 .blog-container{
     display: flex;
@@ -58,7 +60,7 @@
     width: 312px;
     height: 312px;
     background-color: #02851ec3;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 .navigation > .nav-item a{
     text-decoration: none;
@@ -69,6 +71,7 @@
     text-align: center;
     border-radius: 7px;
     font-weight: 500;
+    border: 1px solid gray;
 }
 .nav-item a:last-child{
     background-color: #f800ae;
@@ -84,7 +87,8 @@
 .blog-text a{
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #02851ec3;
+    border: 2px solid #02851ec3;
+    border-radius: 7px;
     padding: 2px 7px;
     margin: 10px 0px;
     color: black;
@@ -147,5 +151,66 @@
     font-size: 20px;
     color:#f800ae;
     cursor: pointer;
+}
+
+/*====================== Responsive for Mobile================== */
+
+@media  screen and (max-width:576px) {
+    .container{
+        margin: 0 20px;
+    }
+    .header-banner-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-banner-info{
+        width: 100%;
+    }
+    .header-banner-img{
+        width: 100%;
+    }
+    .header-banner-img img{
+        height: auto;
+    }
+    .header-banner-info h1{
+        font-size: 45px;
+        font-weight: 700px;
+    }
+    .header-banner-info{
+        text-align: center;
+    }
+    .header-banner-info-text{
+        white-space: nowrap; 
+        max-width: 567px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+      }
+      .blog-container{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+    .container .blogs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px; 
+    }
+    .navigation{
+        margin: 0 auto;
+        background-color: white;
+    }
+    .footer-menu-items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+ 
+    }
+
+/*=================== Responsive for Tablet==================  */
+
+@media  screen and (min-width:577px) and (max-width:768px) {
+    body{
+        background-color: red;
+    }
 }
 
