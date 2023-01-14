@@ -73,11 +73,11 @@
     font-weight: 500;
     border: 1px solid gray;
 }
-.nav-item a:last-child{
+.nav-item a:first-child{
     background-color: #f800ae;
     color: white;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 .nav-item{
@@ -101,7 +101,7 @@
     font-weight: 600;
 }
 .blog-icon{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     /* padding: 20px; */
 }
@@ -112,10 +112,23 @@
 .container .blogs{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 70px;
 }
 .blog-image img{
     width: 100%;
+}
+.blog-image{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+.blog-text, .match-date{
+    text-align: center;
+}
+.blogs h4{
+    font-size: 18px;
 }
 
 /*===================== Footer Section =================================== */
